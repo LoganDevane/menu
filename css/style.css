@@ -1,134 +1,415 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif, sans-serif;
-  }
-  
-  header {
-    background-color: #9cddb0;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style-type: none;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  section {
-    padding: 40px;
-  }
-  
-  section h2 {
-    margin-bottom: 20px;
-  }
-  
-  .menu-item {
-    margin-bottom: 30px;
-    border: 2px solid #9cddb0; /* Adding border */
-    padding: 20px; /* Adding padding for space inside the border */
-  }
-  
-  .menu-item h3 {
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .menu-item ul {
-    list-style-type: none;
-  }
-  
-  .menu-item ul li {
-    margin-bottom: 10px;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
+*.menu-list-item {
+  transition: color 0.3s ease; /* Add smooth transition */
+}
+
+.menu-list-item:hover {
+  color: #ff7f50; /* Change text color on hover */
+}
 
 
+*header {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
 
+header h1 {
+  color: #333;
+}
 
+.menu-item {
+  background-color: #fff;
+  border: 1px solid #333;
+  padding: 20px;
+  margin-bottom: 20px;
+}
 
+.menu-item h3 {
+  color: #333;
+}
 
+.menu-item ul {
+  list-style-type: none;
+  padding: 0;
+}
 
+.menu-item ul li {
+  margin-bottom: 10px;
+}
 
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
 
+footer p {
+  margin-bottom: 0;
+}
 
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Custom CSS */
+/* Header */
+header {
+  background-color: #e7f2ff;
+  padding: 20px 0;
+  animation: fadeInDown 1s ease-out; /* Fade in animation */
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  body {
-    font-family: Arial, sans-serif;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  header {
-    background-color: #aaf1bf;
-    padding: 20px;
-    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  animation: slideInLeft 1s ease-out; /* Slide in from left animation */
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
   }
-  
-  nav ul {
-    list-style-type: none;
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff7f50;
+}
+
+/* Carousel */
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Menu */
+.menu-item {
+  background-color: #fff;
+  border: 1px solid #c6e3ff;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-item h3 {
+  color: #333;
+}
+
+.menu-item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-item ul li {
+  margin-bottom: 10px;
+}
+
+/* Reviews */
+.review {
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-out; /* Fade in from bottom animation */
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  section {
-    padding: 40px;
+}
+
+.review img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.review-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.review-content h4 {
+  margin: 0;
+  color: #333;
+}
+
+.review-content span {
+  font-size: 14px;
+  color: #888;
+}
+
+.review p {
+  margin-bottom: 0;
+}
+
+/* Offers */
+.offer {
+  background-color: #fff3cd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: slideInRight 1s ease-out; /* Slide in from right animation */
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
   }
-  
-  section h2 {
-    margin-bottom: 20px;
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
-  
-  .menu-item {
-    margin-bottom: 30px;
+}
+
+.offer h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.offer p {
+  margin-bottom: 0;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  animation: fadeInUp 1s ease-out; /* Fade in from bottom animation */
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 300px;
   }
-  
-  .menu-item h3 {
-    color: #333;
-    margin-bottom: 10px;
+}
+
+/* Custom CSS */
+/* Background Gradient */
+body {
+  background: linear-gradient(to bottom, #ffffff, #5aa6f1); /* Gradient from white to light gray */
+}
+5aa6f1
+/* Header */
+header {
+  padding: 20px 0;
+  animation: fadeInDown 1s ease-out; /* Fade in animation */
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  .menu-item ul {
-    list-style-type: none;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .menu-item ul li {
-    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  animation: slideInLeft 1s ease-out; /* Slide in from left animation */
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
   }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  } */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff7f50;
+}
+
+/* Carousel */
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Menu */
+.menu-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-item h3 {
+  color: #333;
+}
+
+.menu-item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-item ul li {
+  margin-bottom: 10px;
+}
+
+/* Reviews */
+.review {
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-out; /* Fade in from bottom animation */
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.review img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.review-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.review-content h4 {
+  margin: 0;
+  color: #333;
+}
+
+.review-content span {
+  font-size: 14px;
+  color: #888;
+}
+
+.review p {
+  margin-bottom: 0;
+}
+
+/* Offers */
+.offer {
+  background-color: #fff3cd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: slideInRight 1s ease-out; /* Slide in from right animation */
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.offer h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.offer p {
+  margin-bottom: 0;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  animation: fadeInUp 1s ease-out; /* Fade in from bottom animation */
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 300px;
+  }
+}

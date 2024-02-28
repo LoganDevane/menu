@@ -4,28 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Logan Food</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to Logan Food</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>Welcome to Logan Food</h1>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+  
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Welcome To Logan Food. We Serve Great Food!</p>
+  <section id="about" class="bg-light">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Welcome to Logan Food, where we serve delicious and fresh meals made with love and care. Our restaurant is committed to providing a warm and inviting atmosphere for our guests.</p>
+    </div>
   </section>
 
   <section id="menu">
-    <h2>Our Menu</h2>
-    
+    <div class="container">
+      <h2>Our Menu</h2>
+      <div class="row">
+        <div class="col-md-4">
       </ul>
     </div>
     <div class="menu-item">
@@ -47,6 +57,33 @@
       </ul>
     </div>
   </section>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="bg-light">
+<div class="container">
+<h2>Contact Us</h2>
+<p>Location: 123 Main Street, Logan</p>
+<p>Phone: (555) 123-4567</p>
+<p>Email: info@loganfood.com</p>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<p>&copy; 2024 Logan Food. All rights reserved.</p>
+</div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
 
   
 </body>

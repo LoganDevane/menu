@@ -1,0 +1,208 @@
+*.menu-list-item {
+  transition: color 0.3s ease; /* Add smooth transition */
+}
+
+.menu-list-item:hover {
+  color: #ff7f50; /* Change text color on hover */
+}
+
+
+*header {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+header h1 {
+  color: #333;
+}
+
+.menu-item {
+  background-color: #fff;
+  border: 1px solid #333;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.menu-item h3 {
+  color: #333;
+}
+
+.menu-item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-item ul li {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+  }
+  
+  header {
+    background-color: #9cddb0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  section {
+    padding: 40px;
+  }
+  
+  section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .menu-item {
+    margin-bottom: 30px;
+    border: 2px solid #9cddb0; /* Adding border */
+    /* padding: 20px; /* Adding padding for space inside the border */
+  /* }
+  
+  .menu-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item ul {
+    list-style-type: none;
+  }
+  
+  .menu-item ul li {
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  } */
+
+
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #aaf1bf;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  section {
+    padding: 40px;
+  }
+  
+  section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .menu-item {
+    margin-bottom: 30px;
+  }
+  
+  .menu-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item ul {
+    list-style-type: none;
+  }
+  
+  .menu-item ul li {
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  } */
